@@ -17,7 +17,6 @@ def get_channel_videos(channel_id):
                                            part='snippet', 
                                            maxResults=10,
                                            ).execute()
-    print(res['items'])
     videos += res['items']  
     return videos
 
