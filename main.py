@@ -1,5 +1,5 @@
 from youtubeDescriptionReader import get_channel_videos
-from reddit_bot import bot_post, r
+from reddit_bot import bot_post, r, get_completed
 
 while True:
     videos = get_channel_videos('theneedledrop')
@@ -18,5 +18,5 @@ while True:
                 score += i
             score += '10'
             content = score
-
+    get_completed()
     bot_post(r, title, content)
