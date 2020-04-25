@@ -11,7 +11,7 @@ def bot_login():
     user_agent="ZeN's NBA News Reddit Bot v0.1")
     return r
 # Comment
-def run_robot(r):
+def comment_bot(r):
     for comment in r.subreddit('CosmicJaxTest').comments(limit=10):
         if 'Hi' in comment.body:
             print('Found comment')
@@ -25,11 +25,12 @@ def get_completed():
     return completed
 
 r = bot_login()
-# List of titles posted by the bot
-completed = get_completed()
+
 
 # Make a post
 def bot_post(r, title, content):
+    # List of titles posted by the bot
+    completed = get_completed()
     if title not in completed:
         r.subreddit('CosmicJaxTest').submit(title, selftext=content, spoiler=True)
         with open('completed.txt', 'a') as file:

@@ -18,5 +18,4 @@ while True:
                 score += i
             score += '10'
             content = score
-    get_completed()
     bot_post(r, title, content)
