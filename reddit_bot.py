@@ -11,7 +11,7 @@ def bot_login():
     password=password,
     client_id=client_id,
     client_secret=client_secret,
-    user_agent="ZeN's NBA News Reddit Bot v0.1")
+    user_agent="FantanoScoreBot")
     return r
 
 # Reply with the comment "Hello there!" if someone posts the comment "Hi"
