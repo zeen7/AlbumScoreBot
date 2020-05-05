@@ -1,6 +1,6 @@
 # AlbumScoreBot
 ## Note
-Account credentials, API keys and subreddit name to post to not included in config.py
+Account credentials, API keys and subreddit name to post to are not included in config.py
 
 ## About
 A bot that interacts with both YouTube and Reddit to get music album review scores and posts them online.
