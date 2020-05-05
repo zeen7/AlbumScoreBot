@@ -33,4 +33,6 @@ def bot_post(r, title, content):
         os.remove('completed.txt')
         with open('completed.txt', 'a') as file:
             file.write(title)
+    # Sleeps for 1 hour after bot_post is ran to not get restricted by the API
+    time.sleep(3600)
    
