@@ -9,7 +9,7 @@ while True:
         reversed_score = []
         score = ''
         # Gets title and description/score of the video if it is an album review
-        if('ALBUM REVIEW' in video['snippet']['title']):
+        if(('ALBUM REVIEW' in video['snippet']['title']) or ('MIXTAPE REVIEW' in video['snippet']['title']) or ('EP REVIEW' in video['snippet']['title']) or ('NOT GOOD' in video['snippet']['title'])):
             title = video['snippet']['title']
             # Finds /10 in the description
             index = video['snippet']['description'].find('/10')
