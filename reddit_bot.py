@@ -4,7 +4,7 @@ from config import username, password, client_id, client_secret
 import time
 import os
 
-subreddit = ''
+subreddit = config.subreddit
 
 def bot_login():
     r=praw.Reddit(username=username,
