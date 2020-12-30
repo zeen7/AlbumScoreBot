@@ -16,4 +16,4 @@ A bot that interacts with both YouTube and Reddit to get music album review scor
 ## Technologies Used
 - Praw
 - YouTube Data API
--Google Cloud Platform
+- Google Cloud Platform
